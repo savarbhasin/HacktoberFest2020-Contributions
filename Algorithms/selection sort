@@ -1,0 +1,7 @@
+def selection_sort(lst):
+  n = 0
+  while n < len(lst):
+    for i in range(len(lst)):
+      if lst[i] < lst[i+1]:
+        lst[i],lst[i+1] = lst[i+1],lst[i]
+    n+=1
